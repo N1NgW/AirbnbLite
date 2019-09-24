@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Airbnblite/login</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}">
+
+</head>
+
+<body>
+  <h1>Welcome to Airbnblite!</h1> 
+  <form action="/login" method="post">
+    Username:<br>
+    <input type="text" name="username"><br>
+    Password:<br>
+    <input type="password" name="password"><br>
+    <input type="submit" value="Log in">
+  </form>
+
+  <a href="/signup">Sign up for a new account</a>
+
+</body>
+</html>

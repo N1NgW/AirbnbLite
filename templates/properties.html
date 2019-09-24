@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+  <title>Airbnblite/Properties</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}">
+
+</head>
+
+<body>
+  <a href="/home">Home</a> 
+  <h1>Properties</h1>
+  <form action="/properties" method="POST">
+    <div>
+        {% for property in properties %}
+        <div class="Property">
+        <h2> {{property.name}} </h1>
+        <h3> Property Type: {{property.propertyType}}</h3>
+        <h4> ${{property.price}}</h4>
+        <button type="submit" name="button", value={{property._id}}>Rent</button>
+        </div>
+        {% endfor %}
+    </div>
+  </form>
+</body>

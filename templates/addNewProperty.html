@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Add new property</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}">
+
+</head>
+
+<body>
+  <a href="/home">Home</a>   
+  <h1>Add new property</h1>
+  <form action="/addNewProperty" method="post">
+    Property name:<br>
+    <input type="text" name="name"><br>
+    Property type:<br>
+    <input type="text" name="type"><br>
+    Price:<br>
+    <input type="text" name="price"><br>
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
