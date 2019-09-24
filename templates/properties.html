@@ -9,9 +9,9 @@
   <a href="/home">Home</a> 
   <h1>Properties</h1>
   <form action="/properties" method="POST">
-    <div>
+    <div align="center">
         {% for property in properties %}
-        <div class="Property">
+        <div class="properties">
         <h2> {{property.name}} </h1>
         <h3> Property Type: {{property.propertyType}}</h3>
         <h4> ${{property.price}}</h4>
