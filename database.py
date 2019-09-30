@@ -45,9 +45,8 @@ class DatabaseConnection():
     def deleteOne(self,collectionName,query):
         collection = self.db[collectionName]
         result = collection.delete_one(query)
-        action = "Remove {}".format(collectionName)
         return result
-
+        
     def update(self,collectionName,filter,query):
         self.db[collectionName].update_one(filter, query)
         return True
